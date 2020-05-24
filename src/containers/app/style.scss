@@ -1,0 +1,13 @@
+@import '../../scss/helpers';
+
+.app-container {
+   padding-top: 70px;
+
+  @media (min-width: 768px) {
+      padding-top: 80px;
+  }
+
+  &.has--overlay {
+    @include window-withou-scroll();
+  }
+}

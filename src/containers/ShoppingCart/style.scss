@@ -1,0 +1,56 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+.shopping-cart {
+
+  &__wrapper{
+    .minicart__content{
+      position: relative;
+      height: calc(100vh - 64px);
+      max-width: initial;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    max-height: calc(100% - 100px);
+    text-align: center;
+    padding: 0 1rem;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+  }
+
+  &__content-full {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  &__content-empty {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 20px;
+  }
+
+  &__content-item{
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  &__footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+}
+
+
+

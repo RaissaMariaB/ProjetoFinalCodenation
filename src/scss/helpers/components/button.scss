@@ -1,0 +1,29 @@
+@mixin button-base($button){
+  margin-top: 10px;
+  min-height: 35px;
+  cursor: pointer;
+  background: map_get($button,'background-color');
+  color: map_get($button,'color');
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid map_get($button,'border-color');
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+  &:hover{
+    background-color: map_get($button,'background-color-hover');
+    border-color: lighten(map_get($button,'background-color-hover'),1%);
+  }
+
+  &:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(52,58,64,.5);
+  }
+}

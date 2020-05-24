@@ -1,0 +1,21 @@
+.success-purchase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // Altura da tela subtraindo a altura do header e do footer
+  // (incluindo paddings e margins)
+  height: calc(100vh - 80px - 280px);
+
+  &__gif {
+    width: 100px;
+    height: 100px;
+  }
+
+  &__title {
+    margin: 30px 0;
+    font-size: 25px;
+    font-style: bold;
+    font-family: 'Roboto', serif;
+  }
+}

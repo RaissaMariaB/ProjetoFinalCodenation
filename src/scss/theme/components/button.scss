@@ -1,0 +1,7 @@
+@import './../../colors';
+@import "../../helpers/components/index";
+
+.fs-button {
+  @include button-base($button);
+  color: #FFFF;
+}

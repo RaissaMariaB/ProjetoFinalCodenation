@@ -1,0 +1,77 @@
+@import "../../scss/helpers/components/index";
+@import "../../scss/colors";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,700&display=swap');
+
+.page-404{
+  min-height: calc(100vh - 65px);
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  overflow: hidden;
+
+
+  &__container{
+    display: block;
+    width: 100%;
+    min-height: inherit;
+  }
+
+  &__image-wrapper{
+    position: absolute;
+    z-index: 1;
+    left: 10%;
+    top: 5%;
+    width: 80%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  &__image{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    filter: opacity(0.5) grayscale(0.2);
+    max-width: 700px;
+
+    @media (min-width: 576px) {
+    }
+  }
+
+  &__info-container{
+    width: 90%;
+    padding: 0px 20px;
+    z-index: 10;
+    margin: auto;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  &__not-found{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+
+  &__button{
+    @include button-base($ghost-button);
+    margin-left: auto;
+    margin-right: auto;
+    white-space: pre-line;
+    width: calc(100% - 30px);
+    max-width: 280px;
+    color: #fff;
+    &:hover{
+      color: #212429;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+// SOURCE HACKS: http://browserhacks.com/
+@mixin window-withou-scroll {
+  // CHORME
+  @media all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: .001dpcm) {
+    padding-right: 17px;
+  }
+
+  // FIREFOX
+  @media screen and (min--moz-device-pixel-ratio: 0) {
+    padding-right: 17px;
+  }
+
+  // IE EDGE
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    padding-right: 12px;
+  }
+}
+
+//OSX (Chrome, Safari, Firefox) - 15px.
+//Windows XP (IE7, Chrome, Firefox) - 17px.
+//Windows 7 (IE10, IE11, Chrome, Firefox) - 17px.
+//Windows 8.1 (IE11, Chrome, Firefox) - 17px.
+//Windows 10 (IE11, Chrome, Firefox) - 17px.
+//Windows 10 (Edge 12/13) - 12px.

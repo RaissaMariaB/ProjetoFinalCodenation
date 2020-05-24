@@ -1,0 +1,50 @@
+.button_size {
+  //width: 25px;
+  //height: 28px;
+  //padding: 0;
+  //font-weight: bold;
+  //text-align: center;
+  //font-size: 12px;
+  //background-color: #F9F9F9;
+  //border: 1px solid #ccc8c8;
+  //border-radius: 3px;
+  //cursor: pointer;
+  //outline-color: #212429;
+  //margin: 0 2px;
+
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  text-align: center;
+  background: #212429;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px transparent, 0 0 0 6px transparent;
+  padding: 2px;
+  font-size: 14px;
+  margin: 0 10px;
+  border: none;
+  transition: box-shadow 225ms ease-in-out;
+  outline-color: transparent;
+
+  &.is--selected{
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px #dab931;
+  }
+
+  &:focus{
+    outline: transparent;
+  }
+
+}
+
+.product-full{
+  &__remaining-sizes{
+    align-items: center;
+    color: #999;
+    font-size: 18px;
+    display: flex;
+    width: 0;
+  }
+}

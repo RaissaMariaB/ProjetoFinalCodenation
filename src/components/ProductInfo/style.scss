@@ -1,0 +1,43 @@
+.product-information {
+  &__description {
+    text-align: left;
+
+    &.center {
+      text-align: center;
+    }
+  }
+
+  &__name {
+    font-weight: bold;
+    color: #252424;
+  }
+
+  &__prices {
+    margin-top: 5px;
+  }
+
+  &__price {
+    margin: 0 5px 0 5px;
+
+    .has-discount & {
+      &.is-regular {
+        text-decoration: line-through;
+        margin-left: 0;
+        color: #999595e1;
+      }
+
+      &.is-discount {
+        display: inline;
+        color: #bea203d0;
+      }
+    }
+
+    &.is-discount {
+      display: none;
+    }
+  }
+}
+
+.product-information__price, .is-regular {
+  color: #bea203d0;
+}

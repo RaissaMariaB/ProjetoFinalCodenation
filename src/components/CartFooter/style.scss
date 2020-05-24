@@ -1,0 +1,29 @@
+.cart-footer {
+  padding: 1rem;
+  background: #fff;
+
+  &__container {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(33, 36, 42, 1);
+    font-size: 1rem;
+    color: #fff;
+    border-color: rgba(33, 36, 42, 1);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__subtotal {
+    text-align: center;
+  }
+
+  &__empty {
+    display: none;
+  }
+
+  &__with-currency {
+    display: block;
+  }
+}

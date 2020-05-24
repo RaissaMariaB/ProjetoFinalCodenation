@@ -1,0 +1,88 @@
+.footer {
+  width: 100%;
+  background-color: #111111;
+  padding: 20px;
+  margin-top: 30px;
+
+  color: #FFFF;
+
+  li {
+    list-style: none;
+    padding: 0;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+
+  .footer-subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    label {
+      display: flex;
+    }
+
+    .footer-input {
+      width: 280px;
+      height: 30px;
+      background-color: #111111;
+      color: #FFFF;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      border-bottom: 2px solid #FFFF;
+    }
+
+    .subscribe-btn {
+      height: 42px;
+      background: #111111;
+      outline: none;
+      color: #FFFF;
+      border: none;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .icon {
+      margin-left: 10px;
+    }
+  }
+
+  .footer-info {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-about, .footer-help, .footer-account {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    min-width: 120px;
+    margin: 0 auto;
+  }
+
+  .footer-heading {
+    font-weight: bold;
+  }
+
+  .footer-credits {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .footer-details, li {
+    line-height: 22px;
+  }
+  .footer .footer-subscription label {
+    flex-direction: column;
+  }
+  .footer .footer-info {
+    flex-direction: column;
+  }
+}

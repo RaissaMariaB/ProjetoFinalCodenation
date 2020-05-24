@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.product-page{
+  margin-top: 20px;
+  &__loader{
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 300px);
+    align-items: center;
+  }
+}
+
+//.container-product {
+//  width: 80%;
+//  margin: 0 auto;
+//  display: flex;
+//  font-family: 'Gotham', sans-serif;
+//
+//  @media screen and (max-width: 568px) {
+//    width: 100%;
+//  }
+//
+//}
+//
+//.product-image img {
+//  width: 400px;
+//  height: 680px;
+//  // margin-left: 30px;
+//  margin-top: 5px;
+//  border: 3px solid #212429;
+//}
+//
+//.product-description {
+//  margin-left: 15px;
+//
+//
+//  .product-description__type {
+//    font-weight: bolder;
+//    font-size: 1.2em;
+//    color: #212429;
+//  }
+//}
+//
+//.price_box {
+//  display: flex;
+//  margin-top: -15px;
+//}
+//
+//.product-description__price {
+//  font-weight: bold;
+//  font-size: 0.8em;
+//}
+//
+//.product-description__payment-description {
+//  color: #b1b0b0;
+//  font-size: 0.8em;
+//  justify-content: flex-end;
+//  margin-left: 10px;
+//  font-weight: bold;
+//}
+//
+//.product-description__size {
+//  color: #b1b0b0;
+//  font-size: 0.78rem;
+//  display: block;
+//  margin-top: -5px;
+//  margin-bottom: 5px;
+//}
+//
+//// styling buttons
+//
+//.button_size {
+//  width: 25px;
+//  height: 28px;
+//  padding: 0;
+//  font-weight: bold;
+//  text-align: center;
+//  font-size: 12px;
+//  background-color: #F9F9F9;
+//  border: 1px solid #ccc8c8;
+//  border-radius: 3px;
+//  cursor: pointer;
+//  outline-color: #212429;
+//  margin: 0 2px;
+//}
+//
+//.button_buy {
+//  display: block;
+//  margin-top: 10px;
+//
+//  width: 260px;
+//  height: 35px;
+//  padding: 5px;
+//  cursor: pointer;
+//  outline-color: #212429;
+//
+//  background: #212429;
+//  border: 1px solid #212429;
+//  border-radius: 3px;
+//
+//  color: #FFFF;
+//  font-size: 0.9em;
+//  font-family: 'Roboto', sans-serif;
+//}
+//
+//.button_buy:hover {
+//  background: #bea203d0;
+//  border: 1px solid #bea203d0;
+//  color: #212429;
+//}

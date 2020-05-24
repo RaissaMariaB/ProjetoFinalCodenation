@@ -1,0 +1,18 @@
+$default-black-button: #212429;
+$white: #fff;
+
+$button: (
+  'background-color': $default-black-button,
+  'border-color': $default-black-button,
+  'background-color-hover': lighten($default-black-button,10%),
+  'color:': $white,
+  'shadow': $default-black-button
+);
+
+$ghost-button: (
+  'background-color': transparent,
+  'border-color': $white,
+  'background-color-hover': lighten($white,10%),
+  'color:': $white,
+  'shadow': $white
+);

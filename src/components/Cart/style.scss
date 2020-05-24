@@ -1,0 +1,102 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+
+.minicart {
+  &__overlay {
+    background: rgba(96, 96, 96, 0.4);
+    height: calc(100vh);
+    width: 100vw;
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 4000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 225ms opacity linear;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    &.is--active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__overlayclick{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &__modal {
+    max-width: 280px;
+    width: 23rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    z-index: 1010;
+    box-shadow: -0.2rem 0 0.2rem rgba(0, 0, 0, 0.1);
+    margin: 0;
+    font-family: Gotham, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #212529;
+    justify-content: flex-start;
+    position: relative;
+    transform: translateX(100%);
+    transition: 225ms all linear;
+
+    .is--active & {
+      transform: translateX(0);
+    }
+
+
+    @media (min-width: 360px) {
+      max-width: 300px;
+    }
+
+    @media (min-width: 401px) {
+      max-width: initial;
+    }
+  }
+
+  &__header {
+    align-items: center;
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    padding-right: 1rem;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+
+    span {
+      width: 100%;
+      text-align: center;
+      padding-right: 1rem;
+    }
+
+    .button-close {
+      border: none;
+      background-color: transparent;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+  }
+
+  &__content{
+    max-height: 100vh;
+  }
+}
+
+
+
+
+
+
+

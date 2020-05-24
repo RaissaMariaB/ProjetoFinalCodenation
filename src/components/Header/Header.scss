@@ -1,0 +1,114 @@
+.main-header {
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: 3000;
+  width: 100%;
+  box-shadow: 1px 3px 3px rgba(0,0,0,0.7);
+  position: fixed;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  & .container {
+    padding: 20px;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: 'Roboto', serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 40px;
+
+    &.is--375 {
+      display: none;
+    }
+    @media screen and (min-width: 374px) {
+      &.is--375{
+        display: block;
+      }
+
+      &.is--320{
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 568px) {
+      font-size: 32px;
+    }
+  }
+
+
+  &__subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+
+  &__icons {
+    font-size: 26px;
+    border: none;
+    padding: 0;
+    margin: 0 18px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+    // Remove o outline no Firefox
+    &::-moz-focus-inner {
+      border: 0;
+    }
+
+    &:last-of-type {
+      margin: 0;
+    }
+
+    &.is--search{
+      margin-left: auto;
+    }
+
+  }
+
+  &__icons-container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: 768px) {
+      justify-content: flex-end;
+    }
+  }
+
+  .icon__bag {
+    position: relative;
+
+    .bag-badget {
+      position: absolute;
+      top: -7px;
+      right: -13px;
+      background-color: red;
+      color: #fff;
+      font-size: 13px;
+      font-weight: bold;
+      border-radius: 50%;
+      min-width: 18px;
+      height: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__title:hover , &__subtitle:hover {
+    color: #bea203d0;
+  }
+}
